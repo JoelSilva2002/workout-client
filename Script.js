@@ -1,5 +1,5 @@
 // --- VARIÁVEIS GLOBAIS E CONSTANTES ---
-const API_URL = 'https://meu-treino-api-fbn7.onrender.com/api';
+const API_URL = 'https://meu-treino-api-1bh7.onrender.com';
 let planosDisponiveis = [];
 let exercicioAtual = null;
 let serieAtualIndex = 0;
