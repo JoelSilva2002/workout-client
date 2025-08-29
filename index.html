@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Treino App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <h1>Selecione o Treino do Dia</h1>
+
+    <section id="plan-selection">
+    </section>
+
+    <section id="workout-list" class="hidden">
+        <h2 id="workout-title"></h2>
+        <div id="exercise-container">
+        </div>
+    </section>
+
+    <section id="active-workout-screen" class="hidden">
+        <h2 id="active-exercise-title"></h2>
+
+        <div class="info-box">
+            <h3>Série Atual: <span id="current-set-info"></span></h3>
+            <p>Reps Alvo: <span id="target-reps-info"></span></p>
+        </div>
+
+        <div class="info-box last-time">
+            <h4>Última Vez:</h4>
+            <p id="last-performance-info">Carregando...</p>
+        </div>
+
+        <form id="log-set-form">
+            <input type="number" step="0.5" id="weight" placeholder="Peso (kg)" required>
+            <input type="number" id="reps" placeholder="Repetições" required>
+            <button type="submit">Registrar Série</button>
+        </form>
+
+        <div id="timer-container" class="hidden">
+            <h3>Descanso</h3>
+            <div id="timer-display">02:00</div>
+            <button id="skip-rest-btn">Pular Descanso</button>
+        </div>
+
+        <button id="finish-exercise-btn" class="hidden">Finalizar Exercício</button>
+    </section>
+
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>
