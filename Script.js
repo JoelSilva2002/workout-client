@@ -25,6 +25,13 @@ const finishExerciseBtn = document.getElementById('finish-exercise-btn');
 
 // --- FUNÇÕES PRINCIPAIS ---
 
+document.querySelectorAll(".back-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelectorAll("section").forEach(sec => sec.classList.add("hidden"));
+        document.getElementById("plan-selection").classList.remove("hidden");
+    });
+});
+
 /** 1. Busca os planos disponíveis na API e renderiza os botões de seleção */
 async function setupPlanSelection() {
     try {

@@ -9,15 +9,16 @@
 <body>
 <div class="container">
 
-    <h1>Selecione o Treino do Dia</h1>
+    <h1>Selecione o Treino do Dia</h1> 
 
     <section id="plan-selection">
+        <button class="back-btn hidden">Voltar</button>
     </section>
 
     <section id="workout-list" class="hidden">
         <h2 id="workout-title"></h2>
-        <div id="exercise-container">
-        </div>
+        <div id="exercise-container"></div>
+        <button class="back-btn">Voltar</button>
     </section>
 
     <section id="active-workout-screen" class="hidden">
@@ -36,6 +37,7 @@
         <form id="log-set-form">
             <input type="number" step="0.5" id="weight" placeholder="Peso (kg)" required>
             <input type="number" id="reps" placeholder="Repetições" required>
+             <button class="back-btn">Voltar</button>
             <button type="submit">Registrar Série</button>
         </form>
 
